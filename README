@@ -1,0 +1,7 @@
+2011-05-19
+Author: Nick Dunn
+
+This is a [TextMate bundle][] for the [BEATS Drum Machine language][BEATS].  You'll need to download and install BEATS before you get any use out of this bundle.  Right now the language grammar is a clone of the YAML bundle, but we could potentially add syntax highlighting or other features.  Furthermore, you can hit ⌘R to play your audio file using the `afplay` command.  
+
+[TextMate bundle]:http://manual.macromates.com/en/bundles
+[BEATS]:http://beatsdrummachine.com/
