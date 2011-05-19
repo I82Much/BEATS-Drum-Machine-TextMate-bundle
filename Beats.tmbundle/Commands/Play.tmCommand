@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>saveActiveFile</string>
+	<key>command</key>
+	<string>#!/bin/sh
+
+beats_path=/opt/local/bin/beats
+TMP_FILE=cur_file$$
+
+$beats_path $TM_FILEPATH  $TMP_FILE
+afplay $TMP_FILE
+rm $TMP_FILE</string>
+	<key>input</key>
+	<string>document</string>
+	<key>keyEquivalent</key>
+	<string>@r</string>
+	<key>name</key>
+	<string>Play</string>
+	<key>output</key>
+	<string>showAsHTML</string>
+	<key>scope</key>
+	<string>source.yaml</string>
+	<key>uuid</key>
+	<string>EC85978E-4295-47FE-B774-8E1FF400B779</string>
+</dict>
+</plist>
